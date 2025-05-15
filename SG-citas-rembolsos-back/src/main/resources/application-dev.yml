@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: sg-citas-rembolsos
+    security:
+      jwt:
+        secret-key: 3f7a9c0b4e2d1f6a8c9b7e0f123456789abcdef0123456789abcdef0123456789
+        expiration: 8640000
+  sql:
+    init:
+      platform: postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sg_citas_rembolsos
+    username: postgres
+    password: 1213
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+server:
+  port: 8080
+
+#jdbc:postgresql://localhost:5432/postgres
