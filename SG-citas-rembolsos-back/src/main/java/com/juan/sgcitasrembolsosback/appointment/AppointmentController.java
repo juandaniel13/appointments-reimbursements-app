@@ -29,8 +29,9 @@ public class AppointmentController {
         return "Hola mundo";
     }
 
-    @PostMapping("/scheduleAppointment")
+    @PostMapping("/scheduleAppointment/{patient-id}")
     public ResponseEntity<AppointmentResDTO> scheduleAppointment(
+            @PathVariable("patient-id") Integer patientId,
             @RequestBody @Valid AppointmentReqDTO request
     )
     {

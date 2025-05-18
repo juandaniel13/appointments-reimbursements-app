@@ -57,7 +57,6 @@ public class AppointmentServiceImp implements AppointmentService {
             if(patient.isPresent()) {
                 Appointment appointment = Appointment.builder()
                         .patient(patient.get())
-                        .date(appointmentReq.getDate())
                         .healthProvider(healthProvider)
                         .date(appointmentReq.getDate())
                         .location(Location.builder()

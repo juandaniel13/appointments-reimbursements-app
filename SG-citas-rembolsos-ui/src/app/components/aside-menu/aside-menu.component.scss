@@ -1,0 +1,20 @@
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    max-width: 20vw;
+    height: 80vh;
+}
+
+.user-options-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.system-options-container{
+    display: flex;
+    flex-direction: column;
+}
